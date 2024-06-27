@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoffeeCo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="logo">CoffeeCo</div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#order">Order</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="#order" class="cta">Order Now</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <img
+          src="img/Hero_img.jpg"
+          alt="Coffee"
+          height="280"
+          class="about-image"
+        />
+        <h1>Experience the Best Coffee in Town</h1>
+        <p>Freshly brewed, delivered to your doorstep</p>
+        <a href="#order" class="cta">Order Your Coffee</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="about-content">
+        <h1>About</h1>
+        <p>
+          Welcome to CoffeeCo! We are passionate about delivering the best
+          coffee experience to our customers. Our beans are sourced from the
+          finest farms, and each cup is brewed to perfection.
+        </p>
+        <p>
+          Our mission is to make high-quality coffee accessible to everyone.
+          Whether you’re in the mood for a classic espresso or a specialty
+          latte, we have something for every coffee lover.
+        </p>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+      <div class="menu-content">
+        <h1>Our Menu</h1>
+        <div class="menu-item">
+          <h2>Espresso</h2>
+          <p>Rich and bold espresso shot.</p>
+          <img
+            src="img/Espresso_img.jpg"
+            alt="Espresso"
+            height="100"
+            class="menu-image"
+          />
+        </div>
+        <div class="menu-item">
+          <h2>Latte</h2>
+          <p>Smooth and creamy latte with a shot of espresso.</p>
+          <img
+            src="img/Latte_img.jpg"
+            alt="Latte"
+            height="100"
+            class="menu-image"
+          />
+        </div>
+        <div class="menu-item">
+          <h2>Cappuccino</h2>
+          <p>Espresso with steamed milk and a thick layer of foam.</p>
+          <img
+            src="img/Cappuccino_img.jpg"
+            alt="Cappuccino"
+            height="100"
+            class="menu-image"
+          />
+        </div>
+        <div class="menu-item">
+          <h2>Americano</h2>
+          <p>Espresso diluted with hot water for a smooth taste.</p>
+          <img
+            src="img/Americano_img.jpg"
+            alt="Americano"
+            height="100"
+            class="menu-image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order" class="order">
+      <div class="order-content">
+        <h1>Order Your Coffee</h1>
+        <form action="submit_order.php" method="post">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="coffee">Select Coffee</label>
+          <select id="coffee" name="coffee" required>
+            <option value="espresso">Espresso</option>
+            <option value="latte">Latte</option>
+            <option value="cappuccino">Cappuccino</option>
+            <option value="americano">Americano</option>
+          </select>
+
+          <label for="quantity">Quantity</label>
+          <input type="number" id="quantity" name="quantity" min="1" required />
+
+          <button type="submit" class="cta">Submit Order</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="contact-content">
+        <h1>Contact Us</h1>
+        <form action="submit_contact.php" method="post">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit" class="cta">Send Message</button>
+        </form>
+        <div class="contact-info">
+          <p>Phone: (+91) 444411-7766</p>
+          <p>Email: coffeeco@gmail.com</p>
+          <p>Address: 145 Main Street, Nashik City</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
